@@ -11,7 +11,7 @@ http.createServer(function (req, res) {
     else if(req.url=== '/storystar'){
         
     }else{
-        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.writeHead(404, { 'Content-Type': 'text/html' });
     var  html= fs.readFileSync(__dirname+'/erro.html','utf8');
     res.end(html);
         
