@@ -1,0 +1,316 @@
+<!doctype html>
+<html style="width:500%;height:100%;">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/index.css"><!--連結CSS-->
+  <link rel="stylesheet" href="assets/css/earth.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/shine.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/animate.css"><!--連結animate.CSS-->
+  <link rel="stylesheet" href="assets/css/enter.css" type="text/css">
+  <link rel="shortcut icon" href="assets/img/ball.jpg" type="assets/image/x-icon"><!--網頁頭像-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--RWD-->
+</head>
+
+
+
+<body style="width:100%;height:100%;">
+<div class="all"><!--包住所有放背景大底圖-->
+  <img src="assets/img/background.png">
+
+<img id="shinestar1" src="assets/images/shinestar1.png" height="56" width="52" alt="" />
+<img id="shinestar2" src="assets/images/shinestar2.png" height="56" width="52" alt="" />
+<img id="shinestar3" src="assets/images/shinestar3.png" height="56" width="52" alt="" />
+<img id="shinestar4" src="assets/images/shinestar4.png" height="56" width="52" alt="" />
+<img id="shinestar5" src="assets/images/shinestar5.png" height="56" width="52" alt="" />
+<img id="shinestar6" src="assets/images/shinestar6.png" height="56" width="52" alt="" />
+<img id="shinestar7" src="assets/images/shinestar7.png" height="56" width="52" alt="" />
+
+
+  <div class="A"><!--占1/5-->
+    <div class="containerr"id="container22">
+
+        <div class="slide">
+                    <div id="containerer">
+                  <div id="fly" class="fly2"><img id="fly-img" src="assets/images/fly.png"> </div>
+                   <div id="a"><a id="enterclick" href="#container2" class="page-scroll" onclick="enter()"><p>Enter</p></a></div>
+                  <div id="earth1"><img id="earth1-img" src="assets/images/earth.png"></div>
+            </div>
+              </div>
+
+    </div><!--結束container-->
+  </div><!--結束A-->
+
+
+
+  <div class="B"><!--占4/5-->
+<!--<img id="star" src="images/star.png" height="960" width="1080">
+  <div id="contain">OHYA</div>-->
+
+  <div id="container" class="containerdisappear" style="display:none;">
+    <div class="storystar"><img id="storyimg" src="assets/images/story.png"  alt=""></div>
+    <div class="characterstar"><img id="characterimg" src="assets/images/character.png"  alt=""></div>
+    <div class="createstar"><img id="createimg" src="assets/images/create.png"  alt=""></div>
+    <div class="contactstar"><img id="contactimg" src="assets/images/contact.png"  alt=""></div>
+
+</div>
+    <div class="container2" id="container2">
+      <div class="story" id="story2" style="position: absolute;
+    z-index: 2;">
+        <iframe src ="assets/story.html" frameborder="0" style="width:100%;border:-moz-border-radius: 3vw;border-radius: 3vw;
+        height:100%;position:absolute;z-index:2;"> </iframe>
+      </div>
+         <div class="menu" id="menu2" style="display:none;">
+          <div class="select" id="select2-1">
+            <div class="slide">
+                  <div class="enter">
+                      <a href="#container5" class="page-scroll" id="contactclick">
+                      <div id="runcontact" onclick="setid(4)"><p>contact</p>
+                      </div></a>
+                  </div>
+            </div>
+          </div>
+
+
+          <div class="select" id="select2-2">
+            <div class="slide">
+                  <div class="enter">
+                      <a href="#container4" class="page-scroll" id="creativeclick">
+                      <div id="runcreate" onclick="setid(3)"><p>create</p>
+                      </div></a>
+                  </div>
+            </div>
+          </div>
+
+
+          <div class="select" id="select2-3">
+            <div class="slide">
+                  <div class="enter">
+                    <a href="#container3" class="page-scroll" id="characterclick">
+                    <div id="runcharacter" onclick="setid(2)"><p>character</p>
+                    </div></a>
+                  </div>
+            </div>
+          </div>
+
+
+          <div class="select" id="select2-4">
+            <div class="slide">
+                      <div class="enter">
+                          <a href="#container2" class="page-scroll" id="storyclick">
+                          <div id="runstory" onclick="setid(1)"><p>story</p>
+                        </div></a>
+                      </div>
+            </div>
+          </div>
+     </div>
+    </div>
+
+    <div class="container2" id="container3">
+      <div class="character" id="character2">
+      <iframe src ="assets/character.html" frameborder="0" width="100%" height="100%"  style="position: absolute;border:-moz-border-radius: 3vw;border-radius: 3vw;
+    z-index: 2;"> </iframe> </div>
+
+    </div>
+
+
+    <div class="container2" id="container4">
+      <div class="creative" id="creative2">
+        <iframe src ="assets/creative.html" frameborder="0" width="100%" height="100%"  style="position: absolute;border:-moz-border-radius: 3vw;border-radius: 3vw;
+    z-index: 2;"> </iframe>
+      </div>
+
+    </div>
+
+
+    <div class="container2" id="container5">
+      <div class="contact" id="contact2" >
+        <iframe src ="assets/contact.html" frameborder="0" width="100%" height="100%"  style="position: absolute;border:-moz-border-radius: 3vw;border-radius: 3vw;
+    z-index: 2;"> </iframe>
+      </div>
+
+    </div>
+  </div><!--結束B-->
+
+</div><!--結束all-->
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="assets/js/jquery-2.1.4.min.js"></script><!--jquery-->
+<script src="assets/js/jquery-1.11.0.min.js"></script><!--jquery-->
+<script src="assets/js/jquery.js"></script><!-- Jquery js -->
+<script src="assets/js/jquery.easing.min.js"></script><!-- Jquery 動畫效果 -->
+<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+<script type="text/javascript" src="assets/js/index.js" ></script><!--連結JS-->
+<script type="text/javascript" src="assets/js/scrollingfunction.js" ></script><!--連結JS-->
+<script type="text/javascript" src="assets/js/scrollingcontent.js" ></script><!--連結JS-->
+<script type="text/javascript" src="assets/js/stardisappear.js" ></script><!--連結JS-->
+<script type="text/javascript" src="assets/js/enter.js"></script>
+<script type="text/javascript" src="assets/js/shine.js"></script>
+<script type="text/javascript" src="assets/js/earth.js"></script>
+
+</body>
+
+</body>
+
+
+
+</html>
+<!doctype html>
+<html style="width:500%;height:100%;">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/index.css"><!--連結CSS-->
+  <link rel="stylesheet" href="assets/css/earth.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/shine.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/animate.css"><!--連結animate.CSS-->
+  <link rel="stylesheet" href="assets/css/enter.css" type="text/css">
+  <link rel="shortcut icon" href="assets/img/ball.jpg" type="image/x-icon"><!--網頁頭像-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--RWD-->
+</head>
+
+
+
+<body style="width:100%;height:100%;">
+<div class="all"><!--包住所有放背景大底圖-->
+  <img src="assets/img/background.png">
+
+<img id="shinestar1" src="assets/images/shinestar1.png" height="56" width="52" alt="" />
+<img id="shinestar2" src="assets/images/shinestar2.png" height="56" width="52" alt="" />
+<img id="shinestar3" src="assets/images/shinestar3.png" height="56" width="52" alt="" />
+<img id="shinestar4" src="assets/images/shinestar4.png" height="56" width="52" alt="" />
+<img id="shinestar5" src="assets/images/shinestar5.png" height="56" width="52" alt="" />
+<img id="shinestar6" src="assets/images/shinestar6.png" height="56" width="52" alt="" />
+<img id="shinestar7" src="assets/images/shinestar7.png" height="56" width="52" alt="" />
+
+
+  <div class="A"><!--占1/5-->
+    <div class="containerr"id="container22">
+
+        <div class="slide">
+                    <div id="containerer">
+                  <div id="fly" class="fly2"><img id="fly-img" src="assets/images/fly.png"> </div>
+                   <div id="a"><a id="enterclick" href="#container2" class="page-scroll" onclick="enter()"><p>Enter</p></a></div>
+                  <div id="earth1"><img id="earth1-img" src="assets/images/earth.png"></div>
+            </div>
+              </div>
+
+    </div><!--結束container-->
+  </div><!--結束A-->
+
+
+
+  <div class="B"><!--占4/5-->
+<!--<img id="star" src="images/star.png" height="960" width="1080">
+  <div id="contain">OHYA</div>-->
+
+  <div id="container" class="containerdisappear" style="display:none;">
+    <div class="storystar"><img id="storyimg" src="assets/images/story.png"  alt=""></div>
+    <div class="characterstar"><img id="characterimg" src="assets/images/character.png"  alt=""></div>
+    <div class="createstar"><img id="createimg" src="assets/images/create.png"  alt=""></div>
+    <div class="contactstar"><img id="contactimg" src="assets/images/contact.png"  alt=""></div>
+
+</div>
+    <div class="container2" id="container2">
+      <div class="story" id="story2" style="position: absolute;
+    z-index: 2;">
+        <iframe src ="story.html" frameborder="0" style="width:100%;border:-moz-border-radius: 3vw;border-radius: 3vw;
+        height:100%;position:absolute;z-index:2;"> </iframe>
+      </div>
+         <div class="menu" id="menu2" style="display:none;">
+          <div class="select" id="select2-1">
+            <div class="slide">
+                  <div class="enter">
+                      <a href="#container5" class="page-scroll" id="contactclick">
+                      <div id="runcontact" onclick="setid(4)"><p>contact</p>
+                      </div></a>
+                  </div>
+            </div>
+          </div>
+
+
+          <div class="select" id="select2-2">
+            <div class="slide">
+                  <div class="enter">
+                      <a href="#container4" class="page-scroll" id="creativeclick">
+                      <div id="runcreate" onclick="setid(3)"><p>create</p>
+                      </div></a>
+                  </div>
+            </div>
+          </div>
+
+
+          <div class="select" id="select2-3">
+            <div class="slide">
+                  <div class="enter">
+                    <a href="#container3" class="page-scroll" id="characterclick">
+                    <div id="runcharacter" onclick="setid(2)"><p>character</p>
+                    </div></a>
+                  </div>
+            </div>
+          </div>
+
+
+          <div class="select" id="select2-4">
+            <div class="slide">
+                      <div class="enter">
+                          <a href="#container2" class="page-scroll" id="storyclick">
+                          <div id="runstory" onclick="setid(1)"><p>story</p>
+                        </div></a>
+                      </div>
+            </div>
+          </div>
+     </div>
+    </div>
+
+    <div class="container2" id="container3">
+      <div class="character" id="character2">
+      <iframe src ="character.html" frameborder="0" width="100%" height="100%"  style="position: absolute;border:-moz-border-radius: 3vw;border-radius: 3vw;
+    z-index: 2;"> </iframe> </div>
+
+    </div>
+
+
+    <div class="container2" id="container4">
+      <div class="creative" id="creative2">
+        <iframe src ="creative.html" frameborder="0" width="100%" height="100%"  style="position: absolute;border:-moz-border-radius: 3vw;border-radius: 3vw;
+    z-index: 2;"> </iframe>
+      </div>
+
+    </div>
+
+
+    <div class="container2" id="container5">
+      <div class="contact" id="contact2" >
+        <iframe src ="contact.html" frameborder="0" width="100%" height="100%"  style="position: absolute;border:-moz-border-radius: 3vw;border-radius: 3vw;
+    z-index: 2;"> </iframe>
+      </div>
+
+    </div>
+  </div><!--結束B-->
+
+</div><!--結束all-->
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="assets/js/jquery-2.1.4.min.js"></script><!--jquery-->
+<script src="assets/js/jquery-1.11.0.min.js"></script><!--jquery-->
+<script src="assets/js/jquery.js"></script><!-- Jquery js -->
+<script src="assets/js/jquery.easing.min.js"></script><!-- Jquery 動畫效果 -->
+<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+<script type="text/javascript" src="assets/js/index.js" ></script><!--連結JS-->
+<script type="text/javascript" src="assets/js/scrollingfunction.js" ></script><!--連結JS-->
+<script type="text/javascript" src="assets/js/scrollingcontent.js" ></script><!--連結JS-->
+<script type="text/javascript" src="assets/js/stardisappear.js" ></script><!--連結JS-->
+<script type="text/javascript" src="assets/js/enter.js"></script>
+<script type="text/javascript" src="assets/js/shine.js"></script>
+<script type="text/javascript" src="assets/js/earth.js"></script>
+
+</body>
+
+</body>
+
+
+
+</html>
