@@ -1,0 +1,224 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+</head>
+<body>
+
+	<div class="bg">
+
+		<img class="background"  src="http://i.imgur.com/Y6xyamR.png"/>
+		<img id="shinestar1" src="http://i.imgur.com/vfgubuo.png" height="56" width="52" alt="" />
+		<img id="shinestar2" src="http://i.imgur.com/ABLMd11.png" height="56" width="52" alt="" />
+		<img id="shinestar3" src="http://i.imgur.com/Nb0s2jX.png" height="56" width="52" alt="" />
+		<img id="shinestar4" src="http://i.imgur.com/HzYj9Xv.png" height="56" width="52" alt="" />
+		<img id="shinestar5" src="http://i.imgur.com/BjM7uDX.png" height="56" width="52" alt="" />
+		<img id="shinestar6" src="http://i.imgur.com/e9teRyH.png" height="56" width="52" alt="" />
+		<img id="shinestar7" src="http://i.imgur.com/dtUDiD0.png" height="56" width="52" alt="" />
+		<div class="starall">
+      <img id="sos" src="http://i.imgur.com/bSCAzlO.png">
+			<a class="enterclick" href="container2" onclick="enter()">404 Not Found</a>
+
+			<img  class="launch" src="http://i.imgur.com/YDGbOMM.png">
+
+		<div>
+	</div>
+
+</body>
+<style type="text/css">
+body{
+	margin:0px;border:0px;padding: 0px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#sos{
+  position:absolute;
+  width: 15vw;
+  left: 55vw;
+  top: 18vh;
+}
+#shinestar1{
+  width: 7vw;
+  height: 6vh;
+  position:absolute;
+  left:50%;
+  top: 20%;
+}
+#shinestar2{
+  width: 7vw;
+  height: 6vh;
+  position:absolute;
+  left:70%;
+  top: 30%;
+}
+#shinestar3{
+   width: 7vw;
+  height: 6vh;
+  position:absolute;
+  left:20%;
+  top: 70%;
+}
+#shinestar4{
+   width: 7vw;
+  height: 6vh;
+  position:absolute;
+  left:10%;
+  top: 80%;
+}
+#shinestar5{
+   width: 7vw;
+  height: 6vh;
+  position:absolute;
+  left:90%;
+  top: 50%;
+}
+#shinestar6{
+   width: 7vw;
+  height: 6vh;
+  position:absolute;
+  left:60%;
+  top: 10%;
+}
+#shinestar7{
+   width: 7vw;
+  height: 6vh;
+  position:fixed;
+  left:90%;
+  top: 20%;
+}
+	.bg .background{
+		position: absolute;
+		width:100%;
+		height:100%;
+
+	}
+	.earth{
+		height: 300px;
+		position: absolute;
+		left: 50%;
+		top:60%;
+		margin-left: -225.1315px;
+		margin-top: -150px;
+	}
+	.launch{
+		height: 300px;
+		position: absolute;
+		left: 50%;
+		top:40%;
+		margin-left: -69.6625px;
+	}
+	a{
+		text-decoration:none;
+		cursor: pointer;
+		position: absolute;
+		color:#fff;
+		font-size:60px;
+		font-family: 'Fjalla One', sans-serif;
+		top: 60%;
+		left:39%;
+		z-index: 99;
+	}
+	a:hover{
+		color:  #2D52EC;
+	}
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var anim = function(){
+        $(".launch").animate({ count: 0.07}, {
+            duration: 130,
+            easing: "linear",
+            step: function(num){
+                $(this).css({
+                    top:  100+70*(num+1),
+                });
+            },
+            complete: function(){
+                anim();
+                this.count = 0;
+            }
+        });
+    };
+
+    // 着火
+    anim();
+
+});
+</script>
+<script>
+var motion1=$("#shinestar1")
+var motion2=$("#shinestar2")
+var motion3=$("#shinestar3")
+var motion4=$("#shinestar4")
+var motion5=$("#shinestar5")
+var motion6=$("#shinestar6")
+var motion7=$("#shinestar7")
+  $(function shadow() {
+   var t;var i;
+  t=Math.floor(Math.random()*50)+20;
+  i=Math.floor(Math.random()*7)+1;
+  anim(i,t);
+
+  setTimeout(shadow(),1000)
+
+});
+
+
+ function anim(i,t){
+    switch(i){
+      case 1:
+        starmove(motion1,t);
+      break;
+      case 2:
+        starmove(motion2,t);
+      break;
+      case 3:
+        starmove(motion3,t);
+      break;
+      case 4:
+        starmove(motion4,t);
+      break;
+      case 5:
+        starmove(motion5,t);
+      break;
+      case 6:
+        starmove(motion6,t);
+      break;
+      case 7:
+        starmove(motion7,t);
+      break;
+    }
+
+
+  }
+ function starmove(motion,t){
+  var add0=Math.random()*20;
+  var addl=Math.random()*100;
+  var addt=Math.random()*100;
+  var add2=Math.random()*50;
+  var product=Math.random()*50+20;
+  var anim = function(){
+        motion.animate({count:t},{
+
+    duration:1500,
+    easing:"linear",
+    step:function(num){
+      $(this).css({
+        left:(num+add0)*product+addl,
+        top:(num+add2)*(num+add2)+addt,
+      });
+    },
+    complete: function(){
+                anim();
+                this.count = 0;
+            }
+
+         });
+        };
+        anim();
+    }
+</script>
+</html>
