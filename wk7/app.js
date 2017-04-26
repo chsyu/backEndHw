@@ -9,4 +9,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
 app.use('/', routers);
 
+app.get('/',function(req,res){
+    res.render('frame');
+});
+
+
 app.listen(port);

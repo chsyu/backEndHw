@@ -1,0 +1,114 @@
+body{
+	  background:rgb(210,204,157);
+	margin: 0;  
+    padding: 0;
+}
+#pen{
+	display: inline-block;
+	position: fixed;
+	z-index: 3;
+}
+header{
+	font-family: 'Indie Flower', cursive;
+	font-size: 2vw;
+	position: relative;
+	margin: auto;
+	text-align: center;	
+}
+header p{
+	display: inline-block;
+	position: relative;
+	letter-spacing: 2px;
+	left:5px;
+	color: rgb(99,98,53);
+}
+#buy{
+	width: 20px;
+	margin-left:35vw;
+	text-align: center;
+}
+.wrapper{
+       position: relative;
+	   top:100px;
+        width: 90%;  
+        margin:0 auto;
+ }
+
+.pin{
+        float:left;
+        margin: 10px;
+        padding:0px;
+        background:#ACA06C;
+        box-shadow:0 10px 10px #757575;
+        
+}
+.pin img{
+        width:190px;
+        -webkit-transition: all .25s ease-in-out;
+		   -moz-transition: all .25s ease-in-out;
+		    -ms-transition: all .25s ease-in-out;
+		     -o-transition: all .25s ease-in-out;
+		        transition: all .25s ease-in-out;
+		        position: relative;
+		        z-index: 1;
+}
+.pin img:hover{
+	-webkit-transform: scale(1.2);
+		   -moz-transform: scale(1.2);
+		    -ms-transform: scale(1.2);
+		     -o-transform: scale(1.2);
+		        transform: scale(1.2);
+
+}
+.pin p{
+	position: relative;
+	z-index: 2;
+	color: #E3F0C0;
+	font-family: 'Indie Flower', cursive;
+	font-weight: bolder;
+	font-size: 20px;
+	margin: auto;
+	}
+
+	/*     Animating with CSS transitions   */
+	.masonry,
+	.masonry .masonry-brick {
+	  -webkit-transition-duration: 0.7s;
+	     -moz-transition-duration: 0.7s;
+	      -ms-transition-duration: 0.7s;
+	       -o-transition-duration: 0.7s;
+	          transition-duration: 0.7s;
+	}
+
+
+	.masonry {
+	  -webkit-transition-property: height, width;
+	     -moz-transition-property: height, width;
+	      -ms-transition-property: height, width;
+	       -o-transition-property: height, width;
+	          transition-property: height, width;
+	}
+
+	.masonry .masonry-brick {
+	  -webkit-transition-property: left, right, top;
+	     -moz-transition-property: left, right, top;
+	      -ms-transition-property: left, right, top;
+	       -o-transition-property: left, right, top;
+	          transition-property: left, right, top;
+	}
+#sub{
+	display: block;
+	background-color: rgb(149,121,80);
+	width: 5vw;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1vw;
+	position: relative;
+	color: rgb(227,240,192);
+	margin-left: 12vw;
+	margin-bottom: 5vh;
+	cursor: pointer;
+	border-radius: 5px;
+}
+a{
+	text-decoration: none;
+}

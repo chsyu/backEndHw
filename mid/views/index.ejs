@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<link href="assets/style.css" type="text/css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js" ></script>
+	</head>
+	<body>
+    <div class="commentq">
+		<h1>留言板</h1>
+		<form method="POST" action="/person">
+			名字 : <input type="text" id="name" name="name" /><br /><br />
+			留言 : <input type="text" id="comments" name="comments" /><br /><br />
+			<input type="submit" value="Submit" />
+		</form>
+  </div>
+    <div class="commenta">
+		<h1>comment records</h1>
+		<% if (userinfos.length) { %>
+		  <ul>
+  		  <% userinfos.forEach(function(userinfo){ %>
+			<ul>
+				<li><%= userinfo['name'] %>: <%= userinfo['comments'] %></li>
+				　　<!-- <%= userinfo['time'] %> -->
+			</ul>
+		    <% }) %>
+	  	</ul>
+		<% } %>
+    <div>
+	</body>
+</html>

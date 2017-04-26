@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+body{
+	background-color: rgb(210,204,157);
+}
+#pen{
+	display: inline-block;
+	position: fixed;
+	z-index: 3;
+	top: -3px;
+}
+#map{
+	display: inline-block;
+	position: relative;
+	margin-left: 100px;
+	min-width: 50px;
+	top: 2%;
+	margin-right:2vw;
+	z-index: 1;
+}
+#content{
+	height: 554px;
+	font-family:'Indie Flower', cursive,'cwTeXFangSong', serif;
+	font-size: 1.3vw;
+	color: rgb(76,130,58);
+	font-weight: bolder;
+	background-color: 
+	font-weight: bold;
+
+}
+#data{
+	display: inline-block;
+	width: 315px;
+    height: 250px;
+    margin-right: 0px;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 50px;
+	
+}
+input{
+	width: 20vw;
+	height: 30px;
+	border-radius: 5px;
+	font-family:'Indie Flower', cursive,'cwTeXFangSong', serif;
+	font-size: 1.3vw;
+	color: rgb(99,98,53);
+	font-weight: bold;
+	line-height: 1px;
+	background-color: rgb(227,240,192);
+	
+}
+#problem{
+	height: 115px;
+}
+#name,#email{
+	height: 30px;
+}
+#data p{
+	display: inline-block;
+	position: relative;
+	left:5px;
+	letter-spacing: 2px;
+	top: -5px;
+}
+#sub{
+	background-color: rgb(227,240,192);
+	margin-bottom: 100px;
+}
+#content img{
+	position: relative;
+	display: inline-block;
+	margin-top: 30px;
+}
+#map p{
+	display: inline-block;
+	position: relative;
+	top: -5px;
+}
