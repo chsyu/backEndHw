@@ -1,0 +1,48 @@
+
+
+.ans{
+    
+    margin-left: 10px;
+    color: rgb(99,98,53);
+    font-size: 20px;
+    display: inline-block;
+}
+.title{
+    cursor: pointer;
+}
+.detailans{
+    margin-top: -10px;
+    margin-left: 10px;
+    color: rgb(99,98,53);
+    font-size: 20px;
+    /*display: inline-block;*/
+}
+#userinfo ul li{
+    list-style-image:url('../images/rabbit01.png');
+}
+.det{
+    display: none;
+    margin-top: -20px;
+}
+a{
+    color: rgb(99,98,53);
+    text-decoration: none;
+}
+iframe{
+    float: right;
+}
+#userupdate{
+    margin-right:100px;
+    float: right;
+    top: 0;
+    position: relative;
+    margin-bottom:50%;
+}
+#userinfo{
+    display: inline-block;
+    position: relative;
+}
+.uploadimg input{
+    display: inline-block;
+    width: 100px;
+}

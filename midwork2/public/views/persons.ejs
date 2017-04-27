@@ -1,0 +1,19 @@
+<h1>FeedBack</h1>
+<% if (userinfos.length) { %>
+  <ul>
+    <% userinfos.forEach(function(userinfo){ %>
+      <li>
+        <div class='name'>
+          <div class="title" id="<%= userinfo['name'] %>"><%= userinfo['name'] %></div><br />
+          <div class="det" id="detail<%= userinfo['name'] %>">
+          email:<div class="detailans"><a target="_blank" href="mailto:<%= userinfo['email']%>?&subject=age8artwork回答您的問題&body=hi, <%= userinfo['name'] %>,關於您在我的網站問的問題"><%= userinfo['email'] %></a></div><br />
+          
+          problem:<br /><div class="ans"><%= userinfo['problem'] %></div>
+          </div>
+        </div>
+        <a href="" class='delete' rel=<%= userinfo['_id']%>>DEL</a>
+        <a href="" class='update' rel=<%= userinfo['_id']%>>EDIT</a>
+      </li>
+    <% }) %>
+  </ul>
+<% } %>

@@ -1,0 +1,36 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/ejs_production.js"></script>
+	<link rel="stylesheet" href="css/contact.css" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.css" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/record.css" type="text/css">
+	<title></title>
+</head>
+
+<body>
+	<div id="uploadimg">
+	<form action="/upload" method="post" enctype="multipart/form-data" name="newimg">
+		<h2>Upload Image</h2>
+		<input type="file" name="newImage">
+		<input type="submit" class="sumitimg" value="提交">
+	</form>
+	<div class="imgput"></div>
+	<iframe src="/" width=1000 height=500>
+	</div>
+	</iframe>
+	<div id='content'>
+		<div id="userinfo">
+			<%- include('persons'); %>
+		</div>
+		<div id="userupdate"></div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/record.js"></script>
+</body>
+
+</html>
