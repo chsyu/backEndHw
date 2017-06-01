@@ -11,11 +11,8 @@ class BookList extends Component {
           key={book.title}
           onClick={() => this.props.selectBook(book)}
           className="list-group-item ">
-          <div className="title">
+          <div className="text-center">
           {book.title}
-          </div>
-          <div className="date">
-          {book.date}
           </div>
         </li>
       );
@@ -24,8 +21,8 @@ class BookList extends Component {
 
   render() {
     return (
-      <ul className="list-group col-sm-4 nav nav-pills nav-stacked">
-        
+      <ul className="list-group col-sm-3 nav nav-pills nav-stacked">
+        <h3 className="text-center">TOP 10</h3>
         {this.renderList()}
       </ul>
     )
