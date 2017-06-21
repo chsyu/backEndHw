@@ -1,0 +1,40 @@
+
+ul {
+  margin-top: 20px;
+  padding: 15px;
+}
+
+ul li {
+  margin: 5px;
+  cursor: pointer;
+}
+ul li:hover{
+  color:white;
+  background: #777;
+
+}
+footer {
+      margin:8px;
+      background: #a6a6a6;
+      color: white;
+      padding: 15px;
+     
+}
+.detail{
+  margin-top: 20px;
+  padding: 10px;
+  margin-left:30px;
+}
+img {
+    display:block;
+    margin:auto;
+}
+
+.date{
+  color: #888;
+  font-size: 10px;
+}
+textdetail{
+  margin-top:20px;
+}
+
