@@ -1,9 +1,8 @@
 import axios from 'axios';
-
 export const FETCH_POSTS = 'FETCH_POSTS';
 export const CREATE_POST = 'CREATE_POST';
-const ROOT_URL = 'http://reduxblog.herokuapp.com/api';
-const API_KEY = '?key=ntuedtdchsyu';
+const ROOT_URL = 'http://localhost:3000';
+const API_KEY = '?key=claire';
 export function selectWork(work) {
   // selectBook is an ActionCreator, it needs to return an action object with a type property.
   return {
@@ -29,6 +28,12 @@ export function selectTwo(work){
     payload: work
   };
   
+}
+export function uploadImg(){
+  return {
+    type: 'TWO_SELECTED',
+    payload: work
+  };
 }
 
 export function fetchPosts() {

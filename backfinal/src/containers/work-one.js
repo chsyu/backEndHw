@@ -12,7 +12,7 @@ class WorkOne extends Component {
           onClick={() => this.props.selectWork(work)}
           className="media ">
 
-          <a href="#" className="one">
+          <a href={work.fullimg} className="one">
             <img src={work.img}></img>
           </a>
         </div>
@@ -27,7 +27,7 @@ class WorkOne extends Component {
           onClick={() => this.props.selectWork(work)}
           className="media ">
 
-          <a href="#" className="two">
+          <a href={work.fullimg} className="two">
             <img src={work.img}></img>
           </a>
         </div>

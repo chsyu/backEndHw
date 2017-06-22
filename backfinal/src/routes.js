@@ -4,9 +4,10 @@ import Main from './components/main'
 import PostsIndex from './components/posts_index';
 import PostsNew from './components/posts_new';
 import NewImg from './components/new_img';
+
 import App from './components/app';
-import Work from './components/work'
-import Upload from './components/upload'
+import Work from './components/work';
+import Upload from './components/upload';
 
 
 export default (
@@ -14,6 +15,7 @@ export default (
   <IndexRoute component={Main} />
   <Route path="upload" component={Upload} />
   <Route path="upload/newimg" component={NewImg} />
+
     <Route path="work" component={Work} />
   </Route>
 );

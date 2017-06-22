@@ -16,15 +16,15 @@ class Work extends Component {
                                 <h1>Upload</h1>
 
                             </header>
-                            <div id="uploadimg">
+                            <div className="uploadimg">
                                 <form to="upload/newimg" method="post" enctype="multipart/form-data" name="newimg">
                                     <h2>Upload Image</h2>
                                     <input type="file" name="newImage" />
-                                    <input type="submit" class="sumitimg" value="提交" />
+                                    <input type="submit" className="sumitimg" value="提交" />
                                 </form>
-                                <div class="imgput"></div>
+                                <div className="imgput"></div>
                             </div>
-
+                            
 
 
                         </div>

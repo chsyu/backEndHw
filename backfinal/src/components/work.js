@@ -10,7 +10,7 @@ class Work extends Component {
                 <MenuList />
                 <section className="main">
                     <header className="header">
-                        <div>Snapshot <span>by TEMPLATED</span></div>
+                        <div>Work of <span>I-chin Li</span></div>
                     </header>
                     <section className="galleries">
                         <div className="gallery">

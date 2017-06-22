@@ -14,7 +14,6 @@ const rootReducer = combineReducers({
   selecttwo:SelectTwo,
   posts:PostsReducer,
   form: formReducer,
-  works: WorksReducer,
   workmenu:WorkMenu,
   twoworks:TwoWorkReducer,
   oneworks:OneWorkReducer,
